@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutuja patil - Portfolio</title>
+    <meta name="description" content="Modern portfolio showcasing web development projects and skills">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: "#0f0f0f",
+                        "dark-secondary": "#1a1a1a",
+                        "dark-accent": "#2d2d2d",
+                        primary: "#3b82f6",
+                        "primary-hover": "#2563eb",
+                        accent: "#8b5cf6"
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-dark text-white font-inter">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-dark/90 backdrop-blur-sm z-50 border-b border-dark-accent">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-white hover:text-primary transition-colors" onclick="event.preventDefault(); scrollToSection('hero')">Rutuja Patil</a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors" onclick="event.preventDefault(); scrollToSection('about')">About</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors" onclick="event.preventDefault(); scrollToSection('skills')">Skills</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors" onclick="event.preventDefault(); scrollToSection('projects')">Projects</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors" onclick="event.preventDefault(); scrollToSection('contact')">Contact</a>
+                </div>
+                
+                <button class="md:hidden text-gray-300 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl lg:text-6xl font-bold leading-tight">
+                        Hi, I'm <span class="text-primary">Rutuja Patil</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 leading-relaxed">
+                        Softwere Developer and Data Analyst from chaos to clarity.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-6">
+                        <button class="bg-primary hover:bg-primary-hover text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105" onclick="scrollToSection('projects')">
+                            View My Work
+                        </button>
+                        <button class="border border-gray-600 hover:border-primary text-gray-300 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors" onclick="scrollToSection('contact')">
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
+                            <img 
+                                src="RutujaPatilImg.jpg" 
+                                alt="Rutuja Patil - Portfolio Photo" 
+                                class="w-72 h-72 rounded-full object-cover border-4 border-dark"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-dark-accent p-4 rounded-lg shadow-lg">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary"></div>
+                                <div class="text-sm text-gray-400"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-dark-secondary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">About Me</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Passionate developer and data analyst with prior knowledge 
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img 
+                        src="https://picsum.photos/600/400?random=2" 
+                        alt="About me workspace" 
+                        class="rounded-lg shadow-2xl"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold">Turning raw data into real insights</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        "Highly analytical and detail-oriented, with a strong foundation in statistical analysis, data mining, and data visualization. Proven ability to translate complex data sets into actionable insights using Python, SQL, and Tableau. Passionate about leveraging data-driven solutions to drive business improvement and optimize performance".                     </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        "Data Analyst Fresher | Proficient in SQL, Python, and Tableau | Transforming complex data into actionable insights | Eager to contribute to data-driven decision-making." 
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 pt-6">
+                        <div class="text-center p-4 bg-dark-accent rounded-lg">
+                            <div class="text-2xl font-bold text-primary"></div>
+                            <div class="text-gray-400">Fresher</div>
+                        </div>
+                        <div class="text-center p-4 bg-dark-accent rounded-lg">
+                            <div class="text-2xl font-bold text-primary">3+
+                            </div>
+                            <div class="text-gray-400">Projects Completed</div>
+                        </div>
+                        <div class="text-center p-4 bg-dark-accent rounded-lg">
+                            <div class="text-2xl font-bold text-primary"></div>
+                            <div class="text-gray-400">
+                                python
+                            </div>
+                        </div>
+                        <div class="text-center p-4 bg-dark-accent rounded-lg">
+                            <div class="text-2xl font-bold text-primary">2+
+                            </div>
+                            <div class="text-gray-400">Awards Won</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Skills & Technologies</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Technologies I work with to bring ideas to life
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="skill-card">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-3"></i>
+                    <div class="font-semibold">HTML5</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt text-4xl text-blue-500 mb-3"></i>
+                    <div class="font-semibold">CSS3</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js text-4xl text-yellow-500 mb-3"></i>
+                    <div class="font-semibold">JavaScript</div>
+                </div>
+                <div class="skill-card">
+                    <div class="font-semibold">Java</div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-python text-4xl text-blue-400 mb-3"></i>
+                    <div class="font-semibold">Python</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-dark-secondary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Featured Projects</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Some of my recent work that I'm proud of
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <img 
+                        src="https://picsum.photos/400/250?random=3" 
+                        alt="ElectroBill Portal" 
+                        class="w-full h-48 object-cover rounded-t-lg"
+                        loading="lazy"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">ElectroBill Portal</h3>
+                        <p class="text-gray-400 mb-4">Electricity billing system</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">Spring Java</span>
+                            <span class="tech-tag">html</span>
+                            <span class="tech-tag">MySql</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img 
+                        src="https://picsum.photos/400/250?random=4" 
+                        alt="Task Management App" 
+                        class="w-full h-48 object-cover rounded-t-lg"
+                        loading="lazy"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Crop Insurance</h3>
+                        <p class="text-gray-400 mb-4">Online crop insurance portal for farmers</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">Asp.net</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img 
+                        src="https://picsum.photos/400/250?random=5" 
+                        alt="Weather Dashboard" 
+                        class="w-full h-48 object-cover rounded-t-lg"
+                        loading="lazy"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">TravelPass Hub</h3>
+                        <p class="text-gray-400 mb-4">Real-time bus pass portal</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">html</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Let's work together to bring your ideas to life
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Let's Connect</h3>
+                        <p class="text-gray-300 mb-6">
+                            I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out!
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <div class="text-gray-400">rutujapatil0706@gmail.com</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Phone</div>
+                                <div class="text-gray-400">8999407587</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Location</div>
+                                <div class="text-gray-400">Pune,Maharashtra</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="bg-dark-accent rounded-lg p-8">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                                <input type="text" id="name" class="contact-input" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                                <input type="email" id="email" class="contact-input" placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                            <input type="text" id="subject" class="contact-input" placeholder="Project discussion">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                            <textarea id="message" rows="5" class="contact-input" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-primary-hover text-white py-3 px-6 rounded-lg font-semibold transition-colors transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-secondary py-12 border-t border-dark-accent">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="text-2xl font-bold mb-4">Rutuja Patil</div>
+                <p class="text-gray-400 mb-8 max-w-md mx-auto">
+                    Transforming Numbers into Narratives
+                </p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault(); scrollToSection('about')">About</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault(); scrollToSection('projects')">Projects</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors" onclick="event.preventDefault(); scrollToSection('contact')">Contact</a>
+                </div>
+                <div class="text-gray-500 text-sm">
+                    © 2025 Rutuja Patil. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Define data at the beginning
+        const sections = [
+            { "id": "hero", "name": "Hero" },
+            { "id": "about", "name": "About" },
+            { "id": "skills", "name": "Skills" },
+            { "id": "projects", "name": "Projects" },
+            { "id": "contact", "name": "Contact" }
+        ];
+
+        // Smooth scroll function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Form submission handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! I will get back to you soon.');
+                    form.reset();
+                });
+            }
+        });
+    </script>
+
+    <style>
+        .skill-card {
+            @apply bg-dark-accent p-6 rounded-lg text-center transition-transform hover:scale-105 hover:shadow-2xl;
+        }
+        
+        .project-card {
+            @apply bg-dark rounded-lg shadow-lg transition-transform hover:scale-105 hover:shadow-2xl border border-dark-accent;
+        }
+        
+        .tech-tag {
+            @apply bg-dark-secondary text-gray-300 px-3 py-1 rounded-full text-sm;
+        }
+        
+        .social-icon {
+            @apply w-12 h-12 bg-dark-accent rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary transition-colors;
+        }
+        
+        .contact-input {
+            @apply w-full bg-dark border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb;
+        }
+    </style>
+</body>
+</html>
